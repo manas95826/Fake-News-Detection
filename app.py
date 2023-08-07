@@ -4,6 +4,7 @@ from nltk.stem.porter import PorterStemmer
 from nltk.corpus import stopwords
 import re
 
+nltk.download("stopwords")
 port_stem = PorterStemmer()
 # Load the pre-trained model pipeline
 with open('pipeline_model.pkl', 'rb') as model_file:
